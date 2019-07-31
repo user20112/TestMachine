@@ -1,0 +1,10 @@
+.vs/SNPService/v16/Server/sqlite3/db.lock
+.vs/SNPService/v16/Server/sqlite3/storage.ide-wal
+bin/
+*.suo
+*.user
+_ReSharper.*
+bin
+obj
+packages
+.vs
