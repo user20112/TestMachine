@@ -110,10 +110,10 @@ namespace TestMachine
             Index++;
             if (Index < 120)
             {
-                switch (random.Next(0, 6))
+                switch (random.Next(0, 7))
                 {
                     case 0:
-                        switch (random.Next(0, 2))
+                        switch (random.Next(0, 3))
                         {
                             case 0:
                                 Publisher.SendMessage("     {\"Machine\": \"" + MachineName + "\", \"Good\":\"0\", \"Bad\":\"1\",\"Empty\":\"0\",\"Attempt\":\"1\",\"Other\":\"1\",\"HeadNumber\":\"" + (Index % 4).ToString() + "\"}");
