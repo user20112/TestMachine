@@ -110,47 +110,47 @@ namespace TestMachine
                         switch (random.Next(0, 3))
                         {
                             case 0:
-                                Publisher.SendMessage("     {\"Machine\": \"" + MachineName + "\", \"Good\":\"0\", \"Bad\":\"1\",\"Empty\":\"0\",\"Attempt\":\"1\",\"Other\":\"1\",\"HeadNumber\":\"" + (Index % 4).ToString() + "\"}");
+                                Publisher.SendMessage("     {\"Machine\": \"" + MachineName + "\", \"Good\":\"0\", \"Bad\":\"1\",\"Empty\":\"0\",\"Attempt\":\"1\",\"Other\":\"1\",\"Head_number\":\"" + (Index % 4).ToString() + "\"}");
                                 break;
 
                             case 1:
-                                Publisher.SendMessage("     {\"Machine\": \"" + MachineName + "\", \"Good\":\"0\", \"Bad\":\"1\",\"Empty\":\"0\",\"Attempt\":\"1\",\"Other\":\"0\",\"HeadNumber\":\"" + (Index % 4).ToString() + "\",\"Error1\":\"1\"}");
+                                Publisher.SendMessage("     {\"Machine\": \"" + MachineName + "\", \"Good\":\"0\", \"Bad\":\"1\",\"Empty\":\"0\",\"Attempt\":\"1\",\"Other\":\"0\",\"Head_number\":\"" + (Index % 4).ToString() + "\",\"Error1\":\"1\"}");
                                 break;
 
                             case 2:
-                                Publisher.SendMessage("     {\"Machine\": \"" + MachineName + "\", \"Good\":\"0\", \"Bad\":\"1\",\"Empty\":\"0\",\"Attempt\":\"1\",\"Other\":\"0\",\"HeadNumber\":\"" + (Index % 4).ToString() + "\",\"Error2\":\"1\"}");
+                                Publisher.SendMessage("     {\"Machine\": \"" + MachineName + "\", \"Good\":\"0\", \"Bad\":\"1\",\"Empty\":\"0\",\"Attempt\":\"1\",\"Other\":\"0\",\"Head_number\":\"" + (Index % 4).ToString() + "\",\"Error2\":\"1\"}");
                                 break;
                         }
                         bad++;
                         break;
 
                     case 1:
-                        Publisher.SendMessage("     {\"Machine\": \"" + MachineName + "\", \"Good\":\"1\", \"Bad\":\"0\",\"Empty\":\"0\",\"Attempt\":\"1\",\"Other\":\"0\",\"HeadNumber\":\"" + (Index % 4).ToString() + "\"}");
+                        Publisher.SendMessage("     {\"Machine\": \"" + MachineName + "\", \"Good\":\"1\", \"Bad\":\"0\",\"Empty\":\"0\",\"Attempt\":\"1\",\"Other\":\"0\",\"Head_number\":\"" + (Index % 4).ToString() + "\"}");
                         good++;
                         break;
 
                     case 2:
-                        Publisher.SendMessage("     {\"Machine\": \"" + MachineName + "\", \"Good\":\"1\", \"Bad\":\"0\",\"Empty\":\"0\",\"Attempt\":\"1\",\"Other\":\"0\",\"HeadNumber\":\"" + (Index % 4).ToString() + "\"}");
+                        Publisher.SendMessage("     {\"Machine\": \"" + MachineName + "\", \"Good\":\"1\", \"Bad\":\"0\",\"Empty\":\"0\",\"Attempt\":\"1\",\"Other\":\"0\",\"Head_number\":\"" + (Index % 4).ToString() + "\"}");
                         good++;
                         break;
 
                     case 3:
-                        Publisher.SendMessage("     {\"Machine\": \"" + MachineName + "\", \"Good\":\"1\", \"Bad\":\"0\",\"Empty\":\"0\",\"Attempt\":\"1\",\"Other\":\"0\",\"HeadNumber\":\"" + (Index % 4).ToString() + "\"}");
+                        Publisher.SendMessage("     {\"Machine\": \"" + MachineName + "\", \"Good\":\"1\", \"Bad\":\"0\",\"Empty\":\"0\",\"Attempt\":\"1\",\"Other\":\"0\",\"Head_number\":\"" + (Index % 4).ToString() + "\"}");
                         good++;
                         break;
 
                     case 4:
-                        Publisher.SendMessage("     {\"Machine\": \"" + MachineName + "\", \"Good\":\"1\", \"Bad\":\"0\",\"Empty\":\"0\",\"Attempt\":\"1\",\"Other\":\"0\",\"HeadNumber\":\"" + (Index % 4).ToString() + "\"}");
+                        Publisher.SendMessage("     {\"Machine\": \"" + MachineName + "\", \"Good\":\"1\", \"Bad\":\"0\",\"Empty\":\"0\",\"Attempt\":\"1\",\"Other\":\"0\",\"Head_number\":\"" + (Index % 4).ToString() + "\"}");
                         good++;
                         break;
 
                     case 5:
-                        Publisher.SendMessage("     {\"Machine\": \"" + MachineName + "\", \"Good\":\"1\", \"Bad\":\"0\",\"Empty\":\"0\",\"Attempt\":\"1\",\"Other\":\"0\",\"HeadNumber\":\"" + (Index % 4).ToString() + "\"}");
+                        Publisher.SendMessage("     {\"Machine\": \"" + MachineName + "\", \"Good\":\"1\", \"Bad\":\"0\",\"Empty\":\"0\",\"Attempt\":\"1\",\"Other\":\"0\",\"Head_number\":\"" + (Index % 4).ToString() + "\"}");
                         good++;
                         break;
 
                     case 6:
-                        Publisher.SendMessage("     {\"Machine\": \"" + MachineName + "\", \"Good\":\"0\", \"Bad\":\"0\",\"Empty\":\"1\",\"Attempt\":\"0\",\"Other\":\"0\",\"HeadNumber\":\"" + (Index % 4).ToString() + "\"}");
+                        Publisher.SendMessage("     {\"Machine\": \"" + MachineName + "\", \"Good\":\"0\", \"Bad\":\"0\",\"Empty\":\"1\",\"Attempt\":\"0\",\"Other\":\"0\",\"Head_number\":\"" + (Index % 4).ToString() + "\"}");
                         empty++;
                         break;
                 }
