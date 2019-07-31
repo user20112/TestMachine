@@ -64,22 +64,18 @@ namespace TestMachine
             }
         }
 
-        private int good = 0;
-        private int bad = 0;
-        private int index = 0;
-        private int empty = 0;
+        private int good = 0;                                               //contains a count of good product
+        private int bad = 0;                                                //contains a count of bad product
+        private int index = 0;                                              //contains a count of true machine indexes
+        private int empty = 0;                                              //contains a count of indexes that were empty
         private string MachineName = "HIL-XS-FIM";
-        private string Line = "XS";
-        public static int LogggingLevel;                                                               //what logging level the service has selected
-        private Random random;
-        private string TopicName;                                            //Topic the Main Subscriber is subbed to
-        private string Broker;                                                                  //IP of the broker we are connecting to
-        private string ClientID;                                                                //Client ID for the SNP Service
-        private string ConsumerID;                                                //Engineering Database that we are talking to
+        public static int LogggingLevel;                                    //what logging level the service has selected
+        private Random random;                                              //used to randomize data
+        private string TopicName;                                           //Topic the Main Subscriber is subbed to
+        private string Broker;                                              //IP of the broker we are connecting to
         private TopicPublisher Publisher;
-        private Timer IndexTimer;
+        private Timer IndexTimer;                                           //used to index every set interval
         private int Index = 0;
-        private bool running = false;
 
         private void CallOnStop()
         {
@@ -92,13 +88,11 @@ namespace TestMachine
         {
             TopicName = ConfigurationManager.AppSettings["MainTopicName"];               //load everything from the app settings
             Broker = ConfigurationManager.AppSettings["BrokerIP"];
-            ClientID = ConfigurationManager.AppSettings["ClientID"];
-            ConsumerID = ConfigurationManager.AppSettings["ConsumerID"];
             random = new Random();
             try
             {
                 Publisher = new TopicPublisher(TopicName, Broker);
-                IndexTimer = new System.Threading.Timer(OnElapsedTime, null, 1000, 500);
+                IndexTimer = new System.Threading.Timer(OnElapsedTime, null, 1000, Convert.ToInt32(ConfigurationManager.AppSettings["indexrate"]));
             }
             catch
             {
@@ -124,7 +118,7 @@ namespace TestMachine
                                 break;
 
                             case 2:
-                                Publisher.SendMessage("     {\"Machine\": \"" + MachineName + "\", \"Good\":\"0\", \"Bad\":\"1\",\"Empty\":\"0\",\"Attempt\":\"1\",\"Other\":\"0\",\"HeadNumber\":\"" + (Index % 4).ToString() + "\"},\"Error2\":\"1\"");
+                                Publisher.SendMessage("     {\"Machine\": \"" + MachineName + "\", \"Good\":\"0\", \"Bad\":\"1\",\"Empty\":\"0\",\"Attempt\":\"1\",\"Other\":\"0\",\"HeadNumber\":\"" + (Index % 4).ToString() + "\",\"Error2\":\"1\"}");
                                 break;
                         }
                         bad++;
