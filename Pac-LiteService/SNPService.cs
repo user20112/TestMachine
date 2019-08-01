@@ -74,7 +74,7 @@ namespace TestLine
         private int M2bad = 0;                                                //contains a count of bad product
         private int M2index = 0;                                              //contains a count of true machine indexes
         private int M2empty = 0;                                              //contains a count of indexes that were empty
-        private string M2MachineName = "HIL-XS-AutoFocous5";
+        private string M2MachineName = "HIL-XS-AF5";
         private int M2Index = 0;
         private int M3Good = 0;                                               //contains a count of good product
         private int M3bad = 0;                                                //contains a count of bad product
