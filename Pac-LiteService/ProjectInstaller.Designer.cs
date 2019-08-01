@@ -1,4 +1,4 @@
-﻿namespace TestMachine
+﻿namespace TestLine
 {
     partial class ProjectInstaller
     {
@@ -39,7 +39,7 @@
             // 
             // serviceInstaller1
             // 
-            this.serviceInstaller1.ServiceName = "TestMachine";
+            this.serviceInstaller1.ServiceName = "TestLine";
             // 
             // ProjectInstaller
             // 

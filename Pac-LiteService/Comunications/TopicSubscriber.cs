@@ -3,7 +3,7 @@ using Apache.NMS.ActiveMQ;
 using Apache.NMS.ActiveMQ.Commands;
 using System;
 
-namespace TestMachine
+namespace TestLine
 {
     public delegate void MessageReceivedDelegate(string message);                                   //CallBack Delegate for whenever we receive a message
 

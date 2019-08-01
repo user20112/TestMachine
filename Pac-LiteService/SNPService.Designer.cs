@@ -1,6 +1,6 @@
-﻿namespace TestMachine
+﻿namespace TestLine
 {
-    partial class TestMachine
+    partial class TestLine
     {
         /// <summary> 
         /// Required designer variable.
@@ -31,7 +31,7 @@
             // 
             // Service1
             // 
-            this.ServiceName = "TestMachine";
+            this.ServiceName = "TestLine";
 
         }
 

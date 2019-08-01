@@ -3,7 +3,7 @@ using System.Reflection;
 using System.ServiceProcess;
 using System.Threading;
 
-namespace TestMachine
+namespace TestLine
 {
     internal static class Program
     {
@@ -14,7 +14,7 @@ namespace TestMachine
         {
             ServiceBase[] servicesToRun = new ServiceBase[]
             {
-            new TestMachine()
+            new TestLine()
             };
             if (Environment.UserInteractive)
             {
