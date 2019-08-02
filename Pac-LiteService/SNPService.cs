@@ -167,15 +167,6 @@ namespace TestLine
                 M1index = 0;
                 M1empty = 0;
             }
-            if (M1Index == 320)
-            {
-                Publisher.SendMessage("     {\"Machine\": \"" + M1MachineName + "\", \"StatusCode\":\"0\" , \"MReason\":\"Preventing Wrenching\", \"UReason\":\"oiling up wrench launcher\", \"NAED\":\"31474\",\"Code\": \"1300\"}");
-            }
-            if (M1Index == 330)
-            {
-                Publisher.SendMessage("     {\"Machine\": \"" + M1MachineName + "\", \"StatusCode\":\"2\" , \"MReason\":\"Preventing Wrenching\", \"UReason\":\"oiling up wrench launcher\", \"NAED\":\"31474\",\"Code\": \"1300\"}");
-                M1Index = 0;
-            }
         }
 
         private void M2TimeElapsed(object source)
@@ -221,15 +212,6 @@ namespace TestLine
                 M2bad = 0;
                 M2index = 0;
                 M2empty = 0;
-            }
-            if (M2Index == 320)
-            {
-                Publisher.SendMessage("     {\"Machine\": \"" + M2MachineName + "\", \"StatusCode\":\"0\" , \"MReason\":\"Preventing Wrenching\", \"UReason\":\"oiling up wrench launcher\", \"NAED\":\"31474\",\"Code\": \"1300\"}");
-            }
-            if (M2Index == 330)
-            {
-                Publisher.SendMessage("     {\"Machine\": \"" + M2MachineName + "\", \"StatusCode\":\"2\" , \"MReason\":\"Preventing Wrenching\", \"UReason\":\"oiling up wrench launcher\", \"NAED\":\"31474\",\"Code\": \"1300\"}");
-                M2Index = 0;
             }
         }
 
@@ -277,15 +259,6 @@ namespace TestLine
                 M3index = 0;
                 M3empty = 0;
             }
-            if (M3Index == 320)
-            {
-                Publisher.SendMessage("     {\"Machine\": \"" + M3MachineName + "\", \"StatusCode\":\"0\" , \"MReason\":\"Preventing Wrenching\", \"UReason\":\"oiling up wrench launcher\", \"NAED\":\"31474\",\"Code\": \"1300\"}");
-            }
-            if (M3Index == 330)
-            {
-                Publisher.SendMessage("     {\"Machine\": \"" + M3MachineName + "\", \"StatusCode\":\"2\" , \"MReason\":\"Preventing Wrenching\", \"UReason\":\"oiling up wrench launcher\", \"NAED\":\"31474\",\"Code\": \"1300\"}");
-                M3Index = 0;
-            }
         }
 
         private void M4TimeElapsed(object source)
@@ -331,15 +304,6 @@ namespace TestLine
                 M4bad = 0;
                 M4index = 0;
                 M4empty = 0;
-            }
-            if (M4Index == 320)
-            {
-                Publisher.SendMessage("     {\"Machine\": \"" + M4MachineName + "\", \"StatusCode\":\"0\" , \"MReason\":\"Preventing Wrenching\", \"UReason\":\"oiling up wrench launcher\", \"NAED\":\"31474\",\"Code\": \"1300\"}");
-            }
-            if (M4Index == 330)
-            {
-                Publisher.SendMessage("     {\"Machine\": \"" + M4MachineName + "\", \"StatusCode\":\"2\" , \"MReason\":\"Preventing Wrenching\", \"UReason\":\"oiling up wrench launcher\", \"NAED\":\"31474\",\"Code\": \"1300\"}");
-                M4Index = 0;
             }
         }
     }
