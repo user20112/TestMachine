@@ -161,11 +161,12 @@ namespace TestLine
             }
             if (M1Index == 160)
             {
-                Publisher.SendMessage("     {\"Machine\": \"" + M1MachineName + "\", \"Good\":\"" + M1Good.ToString() + "\" , \"Bad\":\"" + M1bad.ToString() + "\", \"Empty\":\"" + M1empty.ToString() + "\", \"Indexes\":\"" + M1index.ToString() + "\", \"UOM\":\"EA\", \"NAED\":\"31474\"}");
+                Publisher.SendMessage("     {\"Machine\": \"" + M1MachineName + "\", \"Good\":\"" + M1Good.ToString() + "\" , \"Bad\":\"" + M1bad.ToString() + "\", \"Empty\":\"" + M1empty.ToString() + "\", \"Indexes\":\"" + M1index.ToString() + "\", \"UOM\":\"EA\", \"NAED\":\"31518\"}");
                 M1Good = 0;
                 M1bad = 0;
                 M1index = 0;
                 M1empty = 0;
+                M1Index = 0;
             }
         }
 
@@ -207,11 +208,12 @@ namespace TestLine
             }
             if (M2Index == 160)
             {
-                Publisher.SendMessage("     {\"Machine\": \"" + M2MachineName + "\", \"Good\":\"" + M2Good.ToString() + "\" , \"Bad\":\"" + M2bad.ToString() + "\", \"Empty\":\"" + M2empty.ToString() + "\", \"Indexes\":\"" + M2index.ToString() + "\", \"UOM\":\"EA\", \"NAED\":\"31474\"}");
+                Publisher.SendMessage("     {\"Machine\": \"" + M2MachineName + "\", \"Good\":\"" + M2Good.ToString() + "\" , \"Bad\":\"" + M2bad.ToString() + "\", \"Empty\":\"" + M2empty.ToString() + "\", \"Indexes\":\"" + M2index.ToString() + "\", \"UOM\":\"EA\", \"NAED\":\"31518\"}");
                 M2Good = 0;
                 M2bad = 0;
                 M2index = 0;
                 M2empty = 0;
+                M2Index = 0;
             }
         }
 
@@ -253,11 +255,12 @@ namespace TestLine
             }
             if (M3Index == 160)
             {
-                Publisher.SendMessage("     {\"Machine\": \"" + M3MachineName + "\", \"Good\":\"" + M3Good.ToString() + "\" , \"Bad\":\"" + M3bad.ToString() + "\", \"Empty\":\"" + M3empty.ToString() + "\", \"Indexes\":\"" + M3index.ToString() + "\", \"UOM\":\"EA\", \"NAED\":\"31474\"}");
+                Publisher.SendMessage("     {\"Machine\": \"" + M3MachineName + "\", \"Good\":\"" + M3Good.ToString() + "\" , \"Bad\":\"" + M3bad.ToString() + "\", \"Empty\":\"" + M3empty.ToString() + "\", \"Indexes\":\"" + M3index.ToString() + "\", \"UOM\":\"EA\", \"NAED\":\"31518\"}");
                 M3Good = 0;
                 M3bad = 0;
                 M3index = 0;
                 M3empty = 0;
+                M3Index = 0;
             }
         }
 
@@ -299,11 +302,12 @@ namespace TestLine
             }
             if (M4Index == 160)
             {
-                Publisher.SendMessage("     {\"Machine\": \"" + M4MachineName + "\", \"Good\":\"" + M4Good.ToString() + "\" , \"Bad\":\"" + M4bad.ToString() + "\", \"Empty\":\"" + M4empty.ToString() + "\", \"Indexes\":\"" + M4index.ToString() + "\", \"UOM\":\"EA\", \"NAED\":\"31474\"}");
+                Publisher.SendMessage("     {\"Machine\": \"" + M4MachineName + "\", \"Good\":\"" + M4Good.ToString() + "\" , \"Bad\":\"" + M4bad.ToString() + "\", \"Empty\":\"" + M4empty.ToString() + "\", \"Indexes\":\"" + M4index.ToString() + "\", \"UOM\":\"EA\", \"NAED\":\"31518\"}");
                 M4Good = 0;
                 M4bad = 0;
                 M4index = 0;
                 M4empty = 0;
+                M4Index = 0;
             }
         }
     }
