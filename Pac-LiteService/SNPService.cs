@@ -118,8 +118,9 @@ namespace TestLine
                 M3Timer = new Timer(M3TimeElapsed, null, 1000, Convert.ToInt32(ConfigurationManager.AppSettings["indexrate"]) + 200);
                 M4Timer = new Timer(M4TimeElapsed, null, 1000, Convert.ToInt32(ConfigurationManager.AppSettings["indexrate"]) + 300);
             }
-            catch
+            catch(Exception ex)
             {
+
             }
         }
 
